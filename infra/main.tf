@@ -1,11 +1,4 @@
-
-variable "instance_type" {
-  default = "m4.large"
-}
-variable "workers_additional_policies" {
-  default = []
-}
-
+######## DATA ########
 data "aws_availability_zones" "available" {}
 
 provider "aws" {
@@ -13,7 +6,7 @@ provider "aws" {
   shared_credentials_file = "~/.aws/credentials"
   region  = var.region
 }
-
+######## PROVIDERS ########
 provider "random" {
   version = "~> 2.2.1"
 }
@@ -30,6 +23,7 @@ provider "template" {
   version = "~> 2.1.2"
 }
 
+######## VPCs/SUBNETS ########
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "2.21.0"
@@ -58,6 +52,7 @@ module "vpc" {
   }
 }
 
+######## EKS ########
 module "eks" {
   source       = "terraform-aws-modules/eks/aws"
   version      = "7.0.1"

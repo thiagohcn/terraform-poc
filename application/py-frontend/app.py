@@ -4,7 +4,7 @@ import os
 import json
 
 app = Flask(__name__)
-api_url = "http://localhost:5000/"
+api_url = "http://hello-ilb:5000/"
 headers = {'Content-Type': 'application/json'}
 
 @app.route("/")
