@@ -2,8 +2,8 @@ FROM python:3
 
 ADD app.py /
 
-RUN pip install pystrich
+RUN pip3 install pystrich
+RUN pip3 install flask
+RUN pip3 install requests
 
-EXPOSE 443/tcp 80/tcp
-
-CMD [ "python", "./app.py" ]
+CMD [ "python3", "./app.py" ]
