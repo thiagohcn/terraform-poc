@@ -28,6 +28,10 @@ aws configure
 Inside infra folder, run the following commands
 
 ```
+terraform init
+```
+
+```
 terraform plan -out poc.tfplan
 ```
 
