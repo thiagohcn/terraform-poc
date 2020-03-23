@@ -2,9 +2,14 @@
 
 Desenvolvimento do desafio técnico solicitado.
 
-## Getting Started
+## About
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Desenvolvi o desafio técnico até onde fui capaz. Alguns conceitos são novos para mim e desenvolvi esses dias durante o estudo.
+* Eu tinha um conhecimento limitado em Terraform, onde desenvolvi para o teste.
+* Eu tinha conhecimento de kubernetes apenas como desenvolvendor. Estudei toda a arquitetura de um Kubernetes para desenvolver o teste. A conexão entre as duas aplicações foi onde agarrei. Configurei o internal load balancer, o load balancer e as replicas para o backend, porém não consegui fazer as ligações.
+* Tenho pouca prática em shell script para fazer o script bem feito.
+
+
 
 ### Pré requisitos
 
